@@ -30,3 +30,10 @@ Task-Manager is a feature-rich task management web application designed to help 
 Username: task
 Password: task
 ```
+
+### .env File
+
+```bash
+MONGOURL: Your Database URL
+JWT_SECRET: Your Secret Key
+```
