@@ -13,11 +13,14 @@ const Card = ({ data, reference, post, setpost, selectedColor }) => {
   const handleDeleteClick = async () => {
     try {
       const postId = data._id;
-      await axios.delete(`http://localhost:8000/posts/deletePost/${postId}`, {
-        headers: {
-          token: localStorage.getItem("token"),
-        },
-      });
+      await axios.delete(
+        `https://protium-assessment.onrender.com/posts/deletePost/${postId}`,
+        {
+          headers: {
+            token: localStorage.getItem("token"),
+          },
+        }
+      );
 
       const newPosts = post.filter((e) => e._id !== postId);
       alert("Task Deleted");
@@ -59,7 +62,7 @@ const Card = ({ data, reference, post, setpost, selectedColor }) => {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `http://localhost:8000/posts/updatePost/${editData._id}`,
+        `https://protium-assessment.onrender.com/posts/updatePost/${editData._id}`,
         editData,
         {
           headers: {

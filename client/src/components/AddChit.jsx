@@ -29,7 +29,7 @@ const AddChit = () => {
     try {
       // Make the API call to save the data
       const response = await axios.post(
-        "http://localhost:8000/posts/create",
+        "https://protium-assessment.onrender.com/posts/create",
         formValues,
         {
           headers: {

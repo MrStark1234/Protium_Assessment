@@ -9,10 +9,13 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post("http://localhost:8000/auth/login", {
-        username,
-        password,
-      });
+      const response = await axios.post(
+        "https://protium-assessment.onrender.com/auth/login",
+        {
+          username,
+          password,
+        }
+      );
 
       const token = response.data.token;
 
