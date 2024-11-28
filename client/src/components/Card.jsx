@@ -100,27 +100,27 @@ const Card = ({ data, reference, post, setpost, selectedColor }) => {
         dragElastic={0.1}
         dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
         id="card"
-        className="flex-shrink-0 relative w-72  max-h-80 rounded-[50px] bg-sky-900/90  py-10 px-5 text-orange-500 overflow-hidden"
+        className="flex-shrink-0 relative w-64  max-h-80 rounded-[50px] bg-sky-900/90  py-10 px-5 text-orange-500 overflow-hidden"
       >
         <span
-          className="w-6 h-6 rounded-full flex items-center justify-center bg-orange-500 float-right cursor-pointer"
+          className="w-4 h-4 rounded-full flex items-center justify-center bg-orange-500 float-right cursor-pointer"
           onClick={handleDeleteClick}
         >
-          <IoClose size="1em" color="#000" />
+          <IoClose size=".6em" color="#000" />
         </span>
         {color === "red" ? (
           <MdIncompleteCircle
             color={color}
             onClick={toggleColor}
             style={{ cursor: "pointer" }}
-            size="1.6em"
+            size="1em"
           />
         ) : (
           <IoCheckmarkDoneCircleSharp
             color={color}
             onClick={toggleColor}
             style={{ cursor: "pointer" }}
-            size="1.6em"
+            size="1em"
           />
         )}
         <p
@@ -136,10 +136,10 @@ const Card = ({ data, reference, post, setpost, selectedColor }) => {
           <motion.div className="flex items-center justify-between mb-2 py-2 px-8">
             <p className="text-xs text-orange-500">{data.fileSize}</p>
             <span
-              className="w-6 h-6 rounded-full flex items-center justify-center bg-orange-500 float-right cursor-pointer"
+              className="w-4 h-4 rounded-full flex items-center justify-center bg-orange-500 float-right cursor-pointer"
               onClick={toggleModal} // Open the modal on button click
             >
-              <GrDocumentUpdate size="1em" color="#000" />
+              <GrDocumentUpdate size=".6em" color="#000" />
             </span>
           </motion.div>
           {data.tag.isOpen ? (

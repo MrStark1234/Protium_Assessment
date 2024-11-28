@@ -37,3 +37,11 @@ Password: task
 MONGOURL: Your Database URL
 JWT_SECRET: Your Secret Key
 ```
+
+### Backend Deployed URL :-
+
+https://protium-assessment.onrender.com
+
+### Frontend Deployed URL :-
+
+https://tskmanagement.netlify.app/
