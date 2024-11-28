@@ -1,0 +1,14 @@
+@media (max-width: 480px) {
+  #add-btn {
+    left: 41%;
+  }
+  #title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 350px) {
+  #title {
+    font-size: 25px;
+  }
+}
